@@ -44,7 +44,7 @@ nav a{
 .banner-area{
   width: 100%;
   height: 500px;
-  position: fixed;
+  position: relative;
   top: 100px;
   background-image: url(file:///Users/oliviabennington/Desktop/assignment4_Bennington_OB/images/outside.jpg);
   -webkit-background-size; cover;
