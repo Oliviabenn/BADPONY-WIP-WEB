@@ -31,15 +31,24 @@ header{
 }
 nav{
   float: right;
-  line-height: 100px;
+  line-height: 50px;
 }
 nav a{
   text-decoration: none;
   font-family: 'Kiwi Maru', serif;
+  font-weight: lighter;
   letter-spacing: 4px;
   font-size: 20px;
   margin: 0 10px;
+  padding: 0 20px;
   color: #fff;
+}
+li {
+  display: inline-block;
+}
+li a {
+  text-decoration: none;
+  display: inline-block;
 }
 .cool-link::after{
   content: ' ';
