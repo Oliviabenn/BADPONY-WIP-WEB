@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-body{
+body {
   text-align: center;
   background: #000;
   width: 100%;
@@ -11,7 +11,6 @@ body{
   width: 1170px;
   margin: 0 auto;
   position: relative;
-  animation: text 3s 1;
 }
 header{
   height: 100px;
@@ -32,21 +31,6 @@ header{
   color: #fff;
   letter-spacing: 5px;
 }
-@keyframes {
-  0%{
-    color: black;
-    margin-bottom: -40px;
-  }
-  30%{
-    letter-spacing: 25px
-    margin-bottom: -40px;
-  }
-  85%{
-    letter-spacing: 8px;
-    margin-bottom: -40px;
-  }
-}
-
 nav{
   float: right;
   line-height: 50px;
@@ -115,4 +99,3 @@ li a {
   padding: 5% 0;
   font-family: 'Kiwi Maru', serif;
   text-transform: capitalize;
-}
