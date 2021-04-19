@@ -18,7 +18,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #000000;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -40,28 +40,26 @@ input[type=submit]:hover {
 <body>
 
 <h3>Contact Me</h3>
+<p>Please fill this out if you wish to get in contact with OB.</p>
+<form id="contact_form" name="contact_form" method="" action="form.php" onsubmit="return validateForm(this)">
 
 <div class="container">
-  <form action="/action_page.php">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
     <label for="lname">Last Name</label>
     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-    <label for="inquiry">Inquiry</label>
-    <select id="inquiry" name="inquiry">
-      <option value="Support">Support</option>
-      <option value="Gneral">General</option>
-      <option value="usa">USA</option>
-    </select>
+    <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Your Email..">
 
     <label for="subject">Subject</label>
     <textarea id="subject" name="subject" placeholder= "How can I help?" style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
+    </div>
   </form>
-</div>
+
 
 </body>
 </html>
