@@ -1,2 +1,3 @@
-<h1>Hello</h1>
-<p>Form processor by <a href="http://www.inventpartners.com">Invent Partners Web Design York</a>.</p>
+
+  <h1>Sorry, something went wrong.</h1>
+  <p>Please try again</p>

@@ -1,6 +1,6 @@
-<h1>Missing fields</h1>
-<p>Sorry, you have not completed all of the required fields.</p>
-<p>Please hit <a href="#" onClick="history.go(-1)">back</a> and complete the following required fields.</p>
+<h1>Missing fields, girl!</h1>
+<p>You have not completed all of the required fields.</p>
+<p>Please hit <a href="#" onClick="history.go(-1)">back</a> and complete all of the required fields.</p>
 
 <ul>
 <?php
