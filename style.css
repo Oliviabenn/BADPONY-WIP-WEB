@@ -102,3 +102,11 @@ li a {
   padding: 5% 0;
   font-family: 'Kiwi Maru', serif;
   text-transform: capitalize;
+}
+p::first-line {
+  color: green;
+  text-transform: full-width;
+}
+p::first-letter {
+  text-transform: uppercase;
+}
