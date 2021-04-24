@@ -65,17 +65,17 @@ li a {
   transition: width
 }
 .cool-link:hover{
-  background: #383;
+  background: #660000;
 }
 .banner-area{
   width: 100%;
   height: 500px;
   position: relative;
   top: 100px;
-  background-image: url(https://ibb.co/c3nc5kh);
+  background-image: url(https://ibb.co/v3bDdhx);
   -webkit-background-size; cover;
   background-size: cover;
-  background-position: center;
+  background-position: fill;
 }
 .banner-area h2{
   padding-top: 8%;
@@ -83,6 +83,25 @@ li a {
   font-family: 'Kiwi Maru', serif;
   text-transform: none;
   color: #000;
+}
+body, html {
+    height: 100%;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ibb.co/v3bDdhx");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 .content-area{
   width: 100%
