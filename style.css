@@ -2,19 +2,9 @@
   margin: 0;
   padding: 0;
 }
-body {
-  text-align: center;
-  background: #000;
-  width: 100%;
-}
-.container {
-  width: 1170px;
-  margin: 0 auto;
-  position: relative;
-}
 header{
   height: 100px;
-  background: #262626;
+  background: #000000;
   width: 100%;
   z-index: 12;
   position: fixed;
@@ -72,7 +62,7 @@ li a {
   height: 500px;
   position: relative;
   top: 100px;
-  background-image: url(https://ibb.co/0JkzTbK);
+  background-image:;
   -webkit-background-size; cover;
   background-size: cover;
   background-position: fill;
@@ -82,50 +72,82 @@ li a {
   font-size: 70px;
   font-family: 'Kiwi Maru', serif;
   text-transform: none;
-  color: #000;
+  color: #262626;
 }
 body, html {
     height: 100%;
 }
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ibb.co/v3bDdhx");
-  height: 50%;
+body {
+      text-align: center;
+      background: #262626;
+      width: 100%;
+}
+.img-container{
+  background-image: url(https://ibb.co/hdL5Tjr)
+  height: 70%
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   background-size: cover;
   position: relative;
 }
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+.inner-container{
+      text-align: center;
+      position: absolute;
+      width: 100%;
+      color: grey;
+      height:auto;
+      margin-top: 200px;
 }
-.content-area{
-  width: 100%
+    h1{
+      font-size: 6px;
+      font-family: serif;
+}
+    h2{
+      margin-top: -17px;
+      font-family:inherit;
+      font-size:6px;
+      text-align: center;
+}
+    a{
+      margin-top: 20px;
+      font-size: 10px;
+      font-family: inherit;
+}
+    .btn{
+      display: inline-block;
+      width: 200px;
+      font-weight: bold;
+      padding: 10px;
+      color: #fff;
+      border: 4px solid #fff;
+      text-align: center;
+      outline: none;
+      text-decoration: none;
+      transition: background-color 0.2s ease-out, color 0.2 ease-out;
+}
+    .btn:hover,.btn:active{
+      background-color: #fff
+      color: #000;
+      transition: background-color 0.3s ease-in, color 0.3 ease-in;
+}
+@media only screen and (max-width: 920px){
+      .inner-container{
+        margin-top: 100px;
+      }
+}
+@media only screen and (max-width: 540px){
+  .inner_container{
+    margin-top: 150px;
+  }
+  h1{
+    font-size: 6px;
+  }
+  h2{
+    font-size: 6px;
+  }
+  }
+.container {
+  width: 1170px;
+  margin: 0 auto;
   position: relative;
-  top: 450px;
-  background: #000;
-  height:1500px;
-}
-.content-area h2{
-  font-family: 'Kiwi Maru', serif;
-  letter-spacing: 4px;
-  padding-top: 200px;
-  font-size: 40px;
-  margin: 0;
-}
-.content-area p{
-  padding: 5% 0;
-  font-family: 'Kiwi Maru', serif;
-  text-transform: capitalize;
-}
-p::first-line {
-  color: green;
-  text-transform: full-width;
-}
-p::first-letter {
-  text-transform: uppercase;
-}
+    }
