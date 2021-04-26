@@ -12,7 +12,7 @@ header{
 .logo{
   width: 30%;
   float: left;
-  line-height: 100px;
+  line-height: 60px;
 }
 .logo a{
   text-decoration: none;
@@ -83,7 +83,7 @@ body {
       width: 100%;
 }
 .img-container{
-  background-image: url(https://ibb.co/hdL5Tjr)
+  background-image: url(https://i.ibb.co/t2Qf1tn/badpony-bg.jpg)
   height: 70%
   background-position: center;
   background-repeat:no-repeat;
