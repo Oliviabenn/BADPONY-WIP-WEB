@@ -30,6 +30,7 @@ header{
   font-family: 'Orlega One', serif;
   color: #fff
 }
+/* ---- navbar ----*/
 nav{
   float: right;
   line-height: 100px;
@@ -67,6 +68,7 @@ li a {
 .cool-link:hover{
   background: #660000;
 }
+/* ---- hero img ----*/
 body, html {
     height: 100%;
 }
