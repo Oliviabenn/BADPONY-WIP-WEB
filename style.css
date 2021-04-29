@@ -4,6 +4,7 @@ html, body{
   margin: 0%;
   box-sizing: border-box;
   overflow-x: hidden;
+  background-color: #262626;
 }
 
 :root{
@@ -15,7 +16,7 @@ html, body{
 /* -- theme colors -- */
 
 --white: #ffffff;
---black: #00000;
+--black: #000000;
 --light-gray: #636363;
 --bg-color: #000000;
 --blood-red: #7E0000;
@@ -23,7 +24,9 @@ html, body{
 
 /* -- gradient colors --*/
 
---cocktail: linear-gradient(45deg, #874da2 0%, #c43a30 100%);
+--glass: linear-gradient(to top, #dfe9f3 0%, white 100%);
+--premdark: linear-gradient(to right, #434343 0%, black 100%);
+--polite: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
 }
 
 /* -- global classes -- */
@@ -41,9 +44,29 @@ a{
 ul{
   list-style-type: none;
 }
+
+h1{
+  font-family: var(--PatuaOne);
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+h3{
+  font-family: var(--Montserrat);
+  font-size: 1.1rem;
+  color: var(--white);
+}
+button.btn{
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  font-family: var(--Montserrat);
+  cursor: pointer;
+}
 /* -x- global classes -x- */
 
-/*--nav--*/
+/*--navigation--*/
 .nav{
   background: black;
   padding: 0 2rem;
@@ -98,5 +121,63 @@ ul{
 .nav .social i:hover{
   color: #e0001e;
 }
-
+.logo{
+}
 /*--x-nav-x--*/
+
+/*----- main contents ----*/
+
+/*---- site title ----*/
+main .site-title{
+  background: url('https://i.postimg.cc/ZKvqgtbd/afterlight-11.jpg');
+  background-size: cover;
+  height: 110vh;
+  justify-content: center;
+}
+
+main .site-title .site-background{
+  padding-top: 10rem;
+  text-align: center;
+  color: var(--white);
+}
+
+main .site-title h1, h3{
+  margin: .3rem;
+  padding-top: 2.1rem;
+  text-align: center;
+  color: var(--white);
+  text-shadow: 2px 2px #000000;
+}
+
+main .site-title .btn{
+  margin: auto;
+  margin-top: 3.5rem;
+  display: flex;
+  justify-content: center;
+  background: var(--polite);
+  color: var(--white);
+}
+
+main .site-title .btn:hover{
+  background: var(--white);
+  border: 2px solid var(--black);
+  color: var(--dark-gray);
+}
+/*--x-- site title --x--*/
+
+/* ---- blog carousel ---*/
+main .blog{
+  background: url('https://i.postimg.cc/qqfYFtXt/bad-pony-vector-newlogo.png');
+  opacity: .1;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 110vh;
+  width: 100%;
+}
+/* --x-- blog carousel -x-*/
+
+/*--x--- main contents --x--*/
+
+/* --- shop ---*/
+
+/* --x- shop -x--*/
