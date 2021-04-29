@@ -1,0 +1,10 @@
+/* -- font families --*/
+@font-face{
+  font-family: PatuaOne;
+  src: url('../font/Patua_One/PatuaOne-Regular.ttf')
+}
+
+@font-face{
+  font-family: Montserrat;
+  src: url('../font/Montserrat/Montserrat-Regular.ttf')
+}
