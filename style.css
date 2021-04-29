@@ -41,10 +41,11 @@ a{
 ul{
   list-style-type: none;
 }
+/* -x- global classes -x- */
 
 /*--nav--*/
 .nav{
-  background: white;
+  background: black;
   padding: 0 2rem;
   height: 0rem;
   min-height: 10vh;
@@ -55,39 +56,24 @@ ul{
   justify-content: space-between;
 }
 
-.nav .toggle-collapse{
-  position: absolute;
-  top: 0%;
-  width: 90%;
-  cursor: pointer;
-  display: none;
-}
-.nav .toggle-collapse .toggle-icons{
-  display: flex;
-  justify-content: flex-end;
-  padding: 1.7rem 0;
-}
-.nav .toggle-collapse .toggle-icons i{
-  font-size: 1.4rem;
-  color: var(--light-gray);
-}
 .nav .nav-items{
-  list-style-type: none;
   display: flex;
   margin: 0;
 }
+
 .nav .nav-items .nav-link{
   padding: 1.6rem 1rem;
   font-size: 1.1rem;
   position: relative;
   font-family: var(--Montserrat);
-  color: white;
+  font-size: 1.1rem;
+  color: var(--white);
 }
 .nav .nav-items .nav-link:hover{
   background-color: var(--blood-red);
 }
 .nav .nav-items .nav-link:hover a{
-  color: var(--black);
+  color: var(--light-gray);
 }
 
 .nav .nav-brand a{
@@ -96,7 +82,7 @@ ul{
   display: block;
   font-family: var(--PatuaOne);
   font-size: 2.5rem;
-  color: var(--black);
+  color: var(--white);
 }
 
 .nav .social{
@@ -105,20 +91,12 @@ ul{
 
 .nav .social i{
   padding: 0 .2rem;
+  color: var(--white);
+  font-size: 1.8rem;
 }
 
 .nav .social i:hover{
   color: #e0001e;
 }
+
 /*--x-nav-x--*/
-
-/* -- Viewport less than/equal to 750px -- */
-
-@media only screen and (max-width: 750px){
-  .nav .nav-menu, .nav .nav-items{
-    flex-direction: column;
-  }
-  .nav .toggle-collapse{
-    display: initial;
-}
-}
