@@ -231,3 +231,19 @@ figcaption{
 /* --x-- img gallery -x-*/
 
 /*--x--- main contents --x--*/
+
+/*--footer--*/
+body{
+  min-height: 100vh;
+}
+
+.sticky-footer{
+  position: sticky;
+  padding-right: 1.5rem;
+  padding-bottom: .5rem;
+  top: 100%;
+  z-index: 99;
+  color: #636363;
+  background: transparent;
+  text-align: right;
+}
