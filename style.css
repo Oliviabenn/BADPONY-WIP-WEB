@@ -112,6 +112,7 @@ button.btn{
 
 .nav .social{
   padding: 1.4rem 0;
+  z-index: 1000;
 }
 
 .nav .social i{
@@ -176,6 +177,7 @@ main .header h1{
 .container{
   display: flex;
   flex-direction: row;
+  width: 1000px;
 }
 
 /*--hover image ---*/
@@ -228,14 +230,93 @@ figcaption{
   font-family: var(--Montserrat);
   color: var(--white);
 }
-/* --x-- img gallery -x-*/
+/* 3 */
+.hover-animation3{
+  position: relative;
+  padding-left: 550px;
+  height: 400px;
+  width: 400px;
+  margin: 10% auto 0;
+  color: #fff;
+}
 
+.hover-animation3 img{
+  position: absolute;
+  padding-left: 300px;
+  left: 0;
+  width: 400px;
+  height: 400px;
+  transition: opacity .25s ease-in-out;
+}
+.hover-animation3 img.img-front1:hover{
+  opacity:0;
+  cursor: pointer;
+}
+figure{
+  display: table;
+}
+figcaption{
+  display: table-caption;
+  caption-side: top;
+  text-align: center;
+  font-family: var(--Montserrat);
+  color: var(--white);
+}
+/* --x-- img gallery -x-*/
+main .coming-soon{
+  display: inline-block;
+  margin-left: 400px;
+  padding-bottom: 200px;
+  padding-top: 200px;
+  text-align: center;
+  font-family: var(--Montserrat);
+  color: var(--white);
+
+}
+
+/* contact */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical;
+  font-family: var(--Montserrat);
+
+}
+
+input[type=submit] {
+  background-color: var(--blood-red);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: var(--Montserrat);
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #262626;
+  padding: 50px;
+  font-family: var(--Montserrat);
+  color: white;
+}
+
+body .p{
+  font-family: var(--Montserrat);
+  color: white;
+}
 /*--x--- main contents --x--*/
 
 /*--footer--*/
-body{
-  min-height: 100vh;
-}
 
 .sticky-footer{
   position: sticky;
@@ -244,6 +325,5 @@ body{
   top: 100%;
   z-index: 99;
   color: #636363;
-  background: transparent;
-  text-align: right;
+  text-align: center;
 }
