@@ -69,6 +69,8 @@ button.btn{
 /*--navigation--*/
 .nav{
   background: black;
+  position: relative;
+  z-index: 999;
   padding: 0 2rem;
   height: 0rem;
   min-height: 10vh;
@@ -165,16 +167,62 @@ main .site-title .btn:hover{
 }
 /*--x-- site title --x--*/
 
-/* ---- blog carousel ---*/
-main .blog{
-  background: url('https://i.postimg.cc/qqfYFtXt/bad-pony-vector-newlogo.png');
-  opacity: .1;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 110vh;
+/* ---- img gallery ---*/
+.image{
+  position: absolute;
+ width: 400px;
+ height: 400px;
+ z-index:3;
+ top: 50%;
+ left: 50%;
+ margin: -100px 0 0 -150px;
+ background: red;
+}
+.image-1{
+  display: block;
   width: 100%;
 }
-/* --x-- blog carousel -x-*/
+.image-2{
+  display: block;
+  width: 100%;
+}
+.image-overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  display: flex;
+  font-family: var(--Montserrat);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.image-overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+.image-overlay:hover{
+  opacity: 1;
+}
+.image-overlay:hover > * {
+  transform: translateY(0px);
+}
+.image-title{
+  font-size: 2em;
+  font-weight: regular;
+  font-family: var(--PatuaOne);
+}
+.image-description{
+  font-size: 1.25em;
+  margin-top: .25em;
+}
+
+/* --x-- img gallery -x-*/
 
 /*--x--- main contents --x--*/
 

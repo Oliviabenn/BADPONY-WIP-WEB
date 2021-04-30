@@ -3,6 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>BADPONY | Contact</title>
+
+  <!-- page-icon --->
+  <link rel="shortcut icon" href="https://i.postimg.cc/qqfYFtXt/bad-pony-vector-newlogo.png">
+
+  <!--x page-icon -x-->
+
   <style>
         body {
             animation: fadeInAnimation ease 3s;
@@ -54,12 +60,13 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #000000;
+  background-color: var(--blood-red);
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  ;
 }
 
 input[type=submit]:hover {
@@ -75,8 +82,8 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h3>Contact Me</h3>
-<p>Please fill this out if you wish to get in contact with the BADPONY team.</p>
+<h3>Contact Us</h3>
+<p>Please complete all areas of this form if you wish to get in contact with the BADPONY team.</p>
 <form id="contact_form" name="contact_form" method="post" action="form.php" onsubmit="return validateForm(this)">
 
 <div class="container">
@@ -90,7 +97,7 @@ input[type=submit]:hover {
     <input type="text" id="email" name="email" placeholder="Your Email..">
 
     <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder= "How can I help?" style="height:200px"></textarea>
+    <textarea id="subject" name="subject" placeholder= "How can we help?" style="height:200px"></textarea>
 
     <input type="submit" value="Submit">
     </div>
