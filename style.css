@@ -37,8 +37,7 @@ a{
 
 .flex-row{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 ul{
@@ -174,10 +173,11 @@ main .header h1{
   font-family: var(--PatuaOne);
 }
 /* ---- img gallery ---*/
-.container{
+.flex-container{
   display: flex;
-  flex-direction: row;
-  width: 1000px;
+  flex-flow: row wrap;
+  width: 100%;
+  flex-basis: 100%;
 }
 
 /*--hover image ---*/
@@ -233,7 +233,6 @@ figcaption{
 /* 3 */
 .hover-animation3{
   position: relative;
-  padding-left: 550px;
   height: 400px;
   width: 400px;
   margin: 10% auto 0;
@@ -242,7 +241,6 @@ figcaption{
 
 .hover-animation3 img{
   position: absolute;
-  padding-left: 300px;
   left: 0;
   width: 400px;
   height: 400px;
@@ -261,17 +259,6 @@ figcaption{
   text-align: center;
   font-family: var(--Montserrat);
   color: var(--white);
-}
-/* --x-- img gallery -x-*/
-main .coming-soon{
-  display: inline-block;
-  margin-left: 400px;
-  padding-bottom: 200px;
-  padding-top: 200px;
-  text-align: center;
-  font-family: var(--Montserrat);
-  color: var(--white);
-
 }
 
 /* contact */
